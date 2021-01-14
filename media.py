@@ -1,10 +1,16 @@
 import webbrowser
-class Movie:
+
+class Video:
+    def __init__(self, movie_title, movie_storyline):
+        self.title = movie_title
+        self.storyline = movie_storyline
+
+
+class Movie(Video):
 
     VALID_RATINGS = ['G','PG','PG-13','R']
     def __init__(self, movie_title, movie_storyline, poster_image_url, trailer_youtube_url):
-        self.title = movie_title
-        self.storyline = movie_storyline
+        Video.__init__(self, movie_title,movie_storyline)
         self.poster_image_url = poster_image_url
         self.trailer_youtube_url = trailer_youtube_url
 
