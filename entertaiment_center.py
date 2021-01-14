@@ -41,4 +41,6 @@ raging_bull = media.Movie("Raging Bull",
 
 movies = [toy_story, avatar, batman, school_of_rock,wall_e, raging_bull]
 
-fresh_tomatoes.open_movies_page(movies)
+# fresh_tomatoes.open_movies_page(movies)
+
+print(avatar.VALID_RATINGS)
